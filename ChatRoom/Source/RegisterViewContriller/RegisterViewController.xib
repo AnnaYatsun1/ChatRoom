@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="ChatRoom" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="RegisterView" customModule="ChatRoom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefautlAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="579-MJ-OPT">
+                    <rect key="frame" x="70" y="35" width="235" height="235"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="235" id="87n-Yn-jjO"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gwx-1t-LPe">
+                    <rect key="frame" x="15" y="320" width="345" height="247"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cEV-AB-FKr" customClass="TextFieldWithPadding" customModule="ChatRoom" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="33.5"/>
+                            <color key="backgroundColor" red="0.1900652518" green="0.93860939180000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" textContentType="username"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qiv-be-z5o" customClass="TextFieldWithPadding" customModule="ChatRoom" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="53.5" width="345" height="33.5"/>
+                            <color key="backgroundColor" red="0.1900652518" green="0.93860939180000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" textContentType="email"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTC-ND-XXY" customClass="TextFieldWithPadding" customModule="ChatRoom" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="107" width="345" height="33"/>
+                            <color key="backgroundColor" red="0.1900652518" green="0.93860939180000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J38-M8-Fqd">
+                            <rect key="frame" x="0.0" y="160" width="345" height="33.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Register">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQh-ZT-po1">
+                            <rect key="frame" x="0.0" y="213.5" width="345" height="33.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.1900652518" green="0.93860939180000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="579-MJ-OPT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="70" id="Pa0-9d-vYV"/>
+                <constraint firstItem="gwx-1t-LPe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="YNc-DK-w1c"/>
+                <constraint firstItem="gwx-1t-LPe" firstAttribute="top" secondItem="579-MJ-OPT" secondAttribute="bottom" constant="50" id="bR2-mD-H62"/>
+                <constraint firstItem="579-MJ-OPT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="keV-fk-5G6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gwx-1t-LPe" secondAttribute="trailing" constant="15" id="wzu-il-aMM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="579-MJ-OPT" secondAttribute="trailing" constant="70" id="y9E-Cx-wXa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gwx-1t-LPe" secondAttribute="bottom" constant="100" id="znt-OT-PqN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outlet property="emailTextField" destination="qiv-be-z5o" id="chK-xe-Z4t"/>
+                <outlet property="loginButton" destination="LQh-ZT-po1" id="jHg-Od-DTv"/>
+                <outlet property="nameTextField" destination="cEV-AB-FKr" id="v8A-W3-8I8"/>
+                <outlet property="passwordTextField" destination="TTC-ND-XXY" id="scu-35-IUd"/>
+                <outlet property="profileImageView" destination="579-MJ-OPT" id="Ayf-CW-OTT"/>
+                <outlet property="registerButton" destination="J38-M8-Fqd" id="j1p-6P-Igs"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="DefautlAvatar" width="512" height="512"/>
+    </resources>
+</document>
